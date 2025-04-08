@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h1>Conference Registration Form</h1>
+        <label for="name">Full Name: </label><br><input type="text" name="name" id="name" placeholder="Enter your full name" required><br>
+        <label for="email">Email Address: </label><br><input type="email" name="email" id="email" placeholder="Enter your email address" required><br>
+        <label for="age">Age: </label><br><input type="number" name="age" id="age" min="18" max="99" placeholder="18" required>
+    
+        <p>Gender:</p>
+        <input type="radio" name="gender" id="gender_male" value="gender_male"><label for="gender_male">Male</label>
+        <input type="radio" name="gender" id="gender_female" value="gender_female"><label for="gender_female">Female</label>
+    
+        <br><br>
+        <label for="country">Country of Residence: </label><br>
+        <select name="country" id="country">
+            <option value="malaysia">Malaysia</option>
+            <option value="thailand">Thailand</option>
+            <option value="china">China</option>
+            <option value="japan">Japan</option>
+        </select>
+    
+        <p>Area of Interest: </p>
+        <input type="checkbox" name="interest" id="softwaredev" value="softwaredev"><label for="softwaredev">Software Development</label><br>
+        <input type="checkbox" name="interest" id="datascience" value="datascience"><label for="datascience">Data Science</label><br>
+        <input type="checkbox" name="interest" id="cybersecurity" value="cybersecurity"><label for="cybersecurity">Cybersecurity</label><br>
+        <input type="checkbox" name="interest" id="ai" value="ai"><label for="ai">Artificial Intelligence</label><br>
+    
+        <p>Experience Level</p>
+        <input type="radio" name="experience" id="beginner" value="beginner"><label for="beginner">Beginner</label><br>
+        <input type="radio" name="experience" id="intermediate" value="intermediate"><label for="intermediate">Intermediate</label><br>
+        <input type="radio" name="experience" id="advanced" value="advanced"><label for="advanced">Advanced</label><br>
+    
+        <br>
+        <label for="commentandquestion">Comments and Questions: </label><br>
+        <textarea name="commentandquestion" id="commentandquestion" placeholder="Any comments or questions?" rows="4" cols="40"></textarea>
+        <br>
+        <input type="submit" value="Register">
+        <input type="reset">
+    </form>
+</body>
+</html>
